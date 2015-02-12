@@ -12,7 +12,6 @@ class Tabla
 	 * nos regresa una matriz de objetos
 	 */
 	public static function buscar_por_id($id){
-		global $bd;
 		$matriz_objetos = static::buscar_por_sql('SELECT * FROM '.static::$nombre_tabla.' WHERE id = '.$id);
 		return (!empty($matriz_objetos)) ? array_shift($matriz_objetos) : false;
 	}
