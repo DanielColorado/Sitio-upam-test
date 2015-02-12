@@ -18,4 +18,5 @@ require_once(LIB_DIR . SD . 'clases' . SD . 'usuarios' . SD . 'admin.php');
 require_once(LIB_DIR . SD . 'clases' . SD . 'usuarios' . SD . 'docente.php');
 require_once(LIB_DIR . SD . 'clases' . SD . 'usuarios' . SD . 'alumno.php');
 //Librerias para cuestionarios
+require_once(LIB_DIR . SD . 'clases' . SD . 'cuestionarios' . SD . 'cuestionario.php');
 ?>

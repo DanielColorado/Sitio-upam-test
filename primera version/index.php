@@ -1,8 +1,8 @@
 <?php
 require_once ('lib/initialize.php');
-//$docente=new Docente('Ana', 'Perez', 'Rojas', '30', 'ana@hotmail.com', '2-13-23-45', NULL, 'Casa blanca 23 Los pinos', '1','1','0','me gusta superarme a diario y mejorar lo que se','1','1','2');
-//$docente->guardar();
-$registros = Administrador::buscar_todos();
+$alumno=new Alumno('Rocio', 'Bravo', 'Rojas', '21', 'rocio@hotmail.com', '2-13-11-25', NULL, 'Amozoc de mota', '1','2');
+$alumno->guardar();
+$registros = Alumno::buscar_todos();
 foreach ($registros as $persona) {
     echo $persona->toString().'<br/><br/>';
 }
